@@ -1,0 +1,62 @@
+---
+title: "StemNav_R"
+output: html_document
+date: "2025-08-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Yale STEM Navigators - Crash Course in R
+
+Below are a couple practice problems to review the topics covered in today's slides. There are also a couple new tidbits of information and tips specific to RStudio!
+
+**Hint:** to run code chunks below, you can either press the green triangle at the top-right of the chunk, use *`Cmd + Enter`* on Mac, or *`Ctrl + Enter`* on Windows.
+
+The answer key can be found **here**!
+
+## Problem 1 (R Markdown in RStudio)
+
+Below is a code chunk. This whole file is something called an "R-Markdown" file, which is a mix of different text formats alongside executable code blocks. The shortcut to insert a code block is *`Cmd + Option + I`* on Mac and *`Ctrl + Alt + I`* on Windows.
+
+Highlight the italicized text below and input that shortcut to replace it with a code block. Add a comment inside that code block for good measure.
+
+```{r}
+# This is a comment! It's good practice to include these in your code as a form of documentation for future reference or for people collaborating with you. 
+# That said, go ahead and replace the italicized text below with a code block
+```
+
+***Replace this text with a code chunk!***
+
+## Problem 2 (Creating Objects)
+
+Insert another code block below, then create and display the following:
+
+1.  An object called *fifteen* which contains the number 15.
+2.  A vector of length 3 called *pi* containing the digits 3, 1, and 4.
+3.  A vector called *big_vec* containing all numbers from 1 to 100
+    -   **Hint:** a consecutive sequence of numbers can be input via `x:y`, where `x` is the first number in the sequence, and `y` is the last number (e.g. `1:5` = `1, 2, 3, 4, 5`)
+4.  A list containing the following elements:
+    -   The character string `"python could never"`
+
+    -   A vector of length 3 containing the logical values `TRUE, FALSE, TRUE`
+
+    -   The number `1.2345`
+5.  A 2x2 matrix containing the values `1, 2, 3, 4`
+
+***Insert code block here***
+
+## Problem 3 (Importing/Exploring a Data Frame)
+
+Make a code block, and then create a data frame called *y_admits* using the CSV file linked [here](https://raw.githubusercontent.com/SebastianReyes2005/StemNav_R/refs/heads/main/Yale_Admit_Rates.csv). Display the first 5 rows, and then determine the
+
+**Tip:** remember to include quotation marks around the link.
+
+***Insert code block here***
+
+```{r}
+y_admits <- read.csv("https://raw.githubusercontent.com/SebastianReyes2005/StemNav_R/refs/heads/main/Yale_Admit_Rates.csv")
+
+head(y_admits, n = 5)
+```
