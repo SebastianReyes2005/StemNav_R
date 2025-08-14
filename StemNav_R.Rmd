@@ -49,14 +49,36 @@ Insert another code block below, then create and display the following:
 
 ## Problem 3 (Importing/Exploring a Data Frame)
 
-Make a code block, and then create a data frame called *y_admits* using the CSV file linked [here](https://raw.githubusercontent.com/SebastianReyes2005/StemNav_R/refs/heads/main/Yale_Admit_Rates.csv). Display the first 5 rows, and then determine the
+Make a code block, and then create a data frame called *y_admits* using the CSV file linked [here](https://raw.githubusercontent.com/SebastianReyes2005/StemNav_R/refs/heads/main/Yale_Admit_Rates.csv). Display the first 5 rows, and then find the summary statistics (min, Q1, median, Q3, max) of the *Matriculations* variable.
 
 **Tip:** remember to include quotation marks around the link.
 
 ***Insert code block here***
 
-```{r}
-y_admits <- read.csv("https://raw.githubusercontent.com/SebastianReyes2005/StemNav_R/refs/heads/main/Yale_Admit_Rates.csv")
+## Problem 4 (Data Subsetting)
 
-head(y_admits, n = 5)
+Create two new vectors called *yield_rate* and *year* containing the *Percent.Matric* and *Application.Year* columns of *y_admits*, respectively.
+
+***Insert code block here***
+
+## Problem 5 (Data Visualization)
+
+Create:
+
+-    A scatterplot with *year* on the x-axis and *yield_rate* on the y-axis
+
+-   A box plot using the *Matriculations* column of *y_admits* (does this match the summary statistics you found in problem 3?)
+
+***Insert code block here***
+
+## Problem 6 (CHALLENGE)
+
+Run the below code block. Note that it pulls up a documentation page for the `plot()` function! This can also be done for other functions (e.g. `?boxplot`). Go through the documentation for `plot()`, and use the information to re-create the scatterplot from question 5 using a line. Additionally, make the line red.
+
+**Hint:** for color, try setting the appropriate parameter as `___ = "red"`.
+
+```{r}
+?plot.default
 ```
+
+***Insert code block here***
